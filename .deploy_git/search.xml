@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search> 
+  
+  
+    
+    <entry>
+      <title>Hexo搭建博客</title>
+      <link href="2021/03/16/Hexo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/"/>
+      <url>2021/03/16/Hexo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/</url>
+      
+        <content type="html"><![CDATA[<h2 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h2><ol><li><strong>创建GitHub仓库</strong></li><li><strong>安装Git客户端（<a href="https://git-scm.com/download/win">下载地址</a>）</strong></li><li><strong>电脑绑定密钥</strong></li><li><strong>安装Node.js（<a href="https://nodejs.org/en/download/">下载地址</a>）</strong></li><li><strong>安装Hexo</strong></li></ol><p>npm命令安装</p><figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install <span class="literal">-g</span> hexo<span class="literal">-cli</span></span><br></pre></td></tr></table></figure><p><img src="C:\Users\10258\AppData\Roaming\Typora\typora-user-images\1615880707867.png" alt="1615880707867"></p><p>初始化博客</p><figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo init blog</span><br></pre></td></tr></table></figure><p><img src="C:\Users\10258\AppData\Roaming\Typora\typora-user-images\1615880808159.png" alt="1615880808159"></p><h2 id="常用命令"><a href="#常用命令" class="headerlink" title="常用命令"></a>常用命令</h2><figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 安装Hexo</span></span><br><span class="line">npm install hexo <span class="literal">-g</span></span><br><span class="line"><span class="comment"># 升级</span></span><br><span class="line">npm update hexo <span class="literal">-g</span></span><br></pre></td></tr></table></figure><figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 新建文章</span></span><br><span class="line">hexo n <span class="string">&quot;Acticle name&quot;</span></span><br><span class="line">hexo new <span class="string">&quot;Acticle name&quot;</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 生成静态文件</span></span><br><span class="line">hexo g</span><br><span class="line">hexo generate</span><br><span class="line"></span><br><span class="line"><span class="comment"># 启动本地服务</span></span><br><span class="line">hexo s</span><br><span class="line">hexo server <span class="comment"># 热部署</span></span><br><span class="line">hexo server <span class="literal">-s</span> <span class="comment"># 冷部署</span></span><br><span class="line">hexo server <span class="literal">-p</span> <span class="number">5000</span><span class="comment"># 更改端口</span></span><br><span class="line">hexo server <span class="literal">-i</span> <span class="number">192.168</span>.x.x<span class="comment"># 自定义IP</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 清除缓存</span></span><br><span class="line">hexo clean</span><br><span class="line"></span><br><span class="line"><span class="comment"># 部署到git</span></span><br><span class="line">hexo d</span><br><span class="line">hexo deploy</span><br></pre></td></tr></table></figure><h2 id="部署博客"><a href="#部署博客" class="headerlink" title="部署博客"></a>部署博客</h2><h3 id="修改配置文件"><a href="#修改配置文件" class="headerlink" title="修改配置文件"></a><strong>修改配置文件</strong></h3><p>​    主目录下_config.yml</p><p><img src="C:\Users\10258\AppData\Roaming\Typora\typora-user-images\1615882122979.png" alt="1615882122979"></p><h3 id="安装Git部署插件"><a href="#安装Git部署插件" class="headerlink" title="安装Git部署插件"></a>安装Git部署插件</h3><figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo<span class="literal">-deployer</span><span class="literal">-git</span> -<span class="literal">-save</span></span><br></pre></td></tr></table></figure><h3 id="部署到Github"><a href="#部署到Github" class="headerlink" title="部署到Github"></a>部署到Github</h3><figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo clean</span><br><span class="line">hexo g</span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure><p><img src="C:\Users\10258\AppData\Roaming\Typora\typora-user-images\1615882499650.png" alt="1615882499650"></p><p><strong>访问地址：*</strong>用户名.github.io*</p><h2 id="更换主题"><a href="#更换主题" class="headerlink" title="更换主题"></a>更换主题</h2><p><strong>主题传送门：</strong><a href="https://hexo.io/themes/">Themes</a></p><p><strong>主题下载：</strong></p><p>根据主题git仓库下载或直接复制文件到: 主目录/themes/ 下</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone https:&#x2F;&#x2F;github.com&#x2F;Bulandent&#x2F;hexo-theme-bubuzou.git themes&#x2F;bubuzou</span><br></pre></td></tr></table></figure><p><strong>修改配置文件：</strong> </p><p>主目录/_config.yml 配置文件 <code>*theme: 主题名称*</code></p><p><strong>根据主题下载依赖：</strong></p><p>不同主题需要的依赖不同，请根据主题对应文件下 readme.md 中提示下载安装</p><hr><p><strong>参考资料：</strong></p><p><a href="https://zhuanlan.zhihu.com/p/26625249">GitHub+Hexo 搭建个人网站</a></p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> Hexo </tag>
+            
+            <tag> 个人博客 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Docker基础学习</title>
+      <link href="2021/03/15/Docker%E5%9F%BA%E7%A1%80/"/>
+      <url>2021/03/15/Docker%E5%9F%BA%E7%A1%80/</url>
+      
+        <content type="html"><![CDATA[<h2 id="Docker是什么？"><a href="#Docker是什么？" class="headerlink" title="Docker是什么？"></a>Docker是什么？</h2><p>Docker是一个虚拟环境容器，可以将你的开发环境、代码、配置等一并打包到这个容器中，并发布和应用到任意平台上。</p><h2 id="三大概念"><a href="#三大概念" class="headerlink" title="三大概念"></a>三大概念</h2><ol><li><strong>镜像（Image）：</strong>类似于虚拟机中的镜像，是一个包含有文件系统的面向Docker引擎的只读模板。任何应用程序运行都需要环境，而镜像就是用来提供这种运行环境的。例如一个Ubuntu镜像就是一个包含Ubuntu操作系统环境的模板，同理在该镜像上装上Apache软件，就可以称为Apache镜像</li><li><strong>容器（Container）：</strong>类似于一个轻量级的沙盒，可以将其看作一个极简的Linux系统环境（包括root权限、进程空间、用户空间和网络空间等），以及运行在其中的应用程序。Docker引擎利用容器来运行、隔离各个应用。容器是镜像创建的应用实例，可以创建、启动、停止、删除容器，各个容器之间是是相互隔离的，互不影响。注意：镜像本身是只读的，容器从镜像启动时，Docker在镜像的上层创建一个可写层，镜像本身不变</li><li><strong>仓库（Repository）：</strong>类似于代码仓库，这里是镜像仓库，是Docker用来集中存放镜像文件的地方。注意与注册服务器（Registry）的区别：注册服务器是存放仓库的地方，一般会有多个仓库；而仓库是存放镜像的地方，一般每个仓库存放一类镜像，每个镜像利用tag进行区分，比如Ubuntu仓库存放有多个版本（12.04、14.04等）的Ubuntu镜像</li></ol><h2 id="Windows下安装"><a href="#Windows下安装" class="headerlink" title="Windows下安装"></a>Windows下安装</h2><h3 id="安装步骤"><a href="#安装步骤" class="headerlink" title="安装步骤"></a>安装步骤</h3><ol><li><p>系统要求windows 10企业版</p></li><li><p>开启Hyper-V</p></li><li><p>下载<a href="https://hub.docker.com/editions/community/docker-ce-desktop-windows">Docker Desktop forWindows</a></p></li><li><p>使用exe安装</p></li><li><p>测试安装是否成功</p><figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># docker run hello-world</span></span><br><span class="line"><span class="comment"># docker version</span></span><br></pre></td></tr></table></figure></li></ol><h3 id="安装问题汇总"><a href="#安装问题汇总" class="headerlink" title="安装问题汇总"></a>安装问题汇总</h3><p>启动因WSL 2报错，需要安装WSL 2。（适用于 Linux 的 Windows 子系统安装指南）</p><p><strong>参考资料:</strong></p><ol><li><a href="https://zhuanlan.zhihu.com/p/23599229">只要一小时，零基础入门Docker</a></li><li><a href="https://www.runoob.com/docker/windows-docker-install.html">菜鸟教程-Windows Docker 安装</a></li></ol>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> Docker </tag>
+            
+            <tag> 服务器 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+  
+  
+</search>
