@@ -1,8 +1,8 @@
 menu:
     博文: /
     归档: /archives/
-    生活: /categories/live/
-    读书: /categories/read/
+    # 生活: /categories/live/
+    # 读书: /categories/read/
     关于: /about/
 
 widgets:
@@ -14,7 +14,7 @@ widgets:
 # count
 show_count: true
 favicon: https://bubuzou.oss-cn-shenzhen.aliyuncs.com/blog/202010/favicon.ico
-logo: https://bubuzou.oss-cn-shenzhen.aliyuncs.com/blog/202010/logo.png
+logo: https://img30.360buyimg.com/pop/jfs/t1/152641/8/7065/41664/60516222E4ae28186/3116e857f4e8c3d6.jpg
 style: https://bubuzou.oss-cn-shenzhen.aliyuncs.com/blog/202010/bubuzou.css
 
 # Comment
@@ -22,7 +22,7 @@ style: https://bubuzou.oss-cn-shenzhen.aliyuncs.com/blog/202010/bubuzou.css
 leancloud:
     appid: aD8jJBpu4oew3ovNY73z6Rdq-gzGzoHsz # 填写您的appid
     appkey: FdzS5SOPHdhYQoEUngQ8K2QW # 填写您的appkey
-    comment: true # 是否开启评论系统
+    comment: false # 是否开启评论系统
     timer: true # 是否开启文章统计
 
 
@@ -31,5 +31,5 @@ leancloud:
 ga: UA-65933410-1
 
 # Copyright Infomation
-startyear: 2016
+startyear: 2021
 

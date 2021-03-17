@@ -20,7 +20,8 @@ npm命令安装
 npm install -g hexo-cli
 ```
 
-![1615880707867](C:\Users\10258\AppData\Roaming\Typora\typora-user-images\1615880707867.png)
+
+![1615880707867](https://img30.360buyimg.com/pop/jfs/t1/169010/12/13034/7688/60515eacE36b528f5/0f31e5a2786540a2.png)
 
 初始化博客
 
@@ -28,7 +29,7 @@ npm install -g hexo-cli
 hexo init blog
 ```
 
-![1615880808159](C:\Users\10258\AppData\Roaming\Typora\typora-user-images\1615880808159.png)
+![1615880808159](https://img30.360buyimg.com/pop/jfs/t1/156211/27/16450/10007/60515eacE6e29da19/1763598c0dc5ea70.png)
 
 ## 常用命令
 
@@ -43,6 +44,9 @@ npm update hexo -g
 # 新建文章
 hexo n "Acticle name"
 hexo new "Acticle name"
+
+# 创建路由
+hexo new page '路由地址名'
 
 # 生成静态文件
 hexo g
@@ -69,7 +73,7 @@ hexo deploy
 
 ​	主目录下_config.yml
 
-![1615882122979](C:\Users\10258\AppData\Roaming\Typora\typora-user-images\1615882122979.png)
+![1615882122979](https://img30.360buyimg.com/pop/jfs/t1/155581/16/16210/11840/60515eacE330d0d00/bc221512ebc374e3.png)
 
 ### 安装Git部署插件
 
@@ -85,7 +89,7 @@ hexo g
 hexo d
 ```
 
-![1615882499650](C:\Users\10258\AppData\Roaming\Typora\typora-user-images\1615882499650.png)
+![1615882499650](https://img30.360buyimg.com/pop/jfs/t1/164788/13/13145/15522/60515eacE588a6fd1/8c6d0ae9e4bcdc96.png)
 
 **访问地址：***用户名.github.io*
 
